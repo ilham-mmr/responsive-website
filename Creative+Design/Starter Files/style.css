@@ -21,6 +21,16 @@ html {
   overflow-x: hidden;
 }
 
+.section-heading {
+  font-size: 10rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #999;
+  text-align: center;
+  opacity: 0.1;
+  text-shadow: 2rem 2rem 4rem #aaa;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -454,3 +464,148 @@ body {
 }
 
 /* End of Section 4 */
+
+.scroll-up-btn {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgba(50, 231, 255, 0.8);
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  transition: background-color 0.3s;
+  scroll-behavior: smooth;
+}
+
+.scroll-up-btn:hover {
+  background-color: #32e7ff;
+}
+
+/* Responsive */
+@media (max-width:1400px) {
+  .floating-bg {
+    top: -120vw;
+  }
+
+  .section-1-heading {
+    font-size: 6rem;
+    top: 25vw;
+    width: 70rem;
+  }
+
+  .navbar-link {
+    font-size: 2rem;
+  }
+
+  .logo {
+    top: 75%;
+  }
+
+  .logo i {
+    font-size: 10rem;
+  }
+
+  .section-heading {
+    font-size: 8rem;
+    margin-bottom: 10rem;
+  }
+
+  .section-2 {
+    height: auto;
+  }
+
+  .customers-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .customer {
+    margin: 5rem 10rem;
+  }
+
+  .section-3 {
+    height: auto;
+  }
+
+  .team-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .team-member {
+    margin: 5rem 10rem;
+  }
+
+  .form-container {
+    height: 60%;
+  }
+
+  .form-img {
+    display: none;
+  }
+
+  .contact-form {
+    transform: translateY(0);
+  }
+
+  .contact-form:hover {
+    transform: translateY(-1);
+
+  }
+
+  .copyright {
+    margin: 5rem 0 4rem 0;
+  }
+}
+
+@media (max-width:1150px) {
+  .floating-bg {
+    top: -110vw;
+  }
+
+  .section-1-heading {
+    font-size: 5rem;
+    top: 30vw;
+    width: 60rem;
+  }
+  .logo i {
+    font-size: 9rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .floating-bg {
+    top: -100vw;
+  }
+
+  .section-1-heading {
+    top: 40vw;
+  }
+
+  .navbar {
+    justify-content: space-around;
+  }
+}
+@media (max-width: 750px) {
+  html {
+    font-size: 50%;
+  }
+
+  .floating-bg {
+    top: -90vw;
+  }
+
+  .section-1-heading {
+    top: 48vw;
+  }
+
+  .section-heading {
+    margin-bottom: 5rem;
+  }
+}
+
+
+/* End of Responsive  */
